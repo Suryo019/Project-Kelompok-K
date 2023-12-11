@@ -6533,6 +6533,656 @@ def tampilan_in_game8():
             yah_kalah = True
 
 
+def tampilan_cs():
+    def matahari():
+        # Warna Utama
+        square(625, 649, 124, 68, matahari1)
+        square(618, 663, 7, 41, matahari1)
+        square(749, 663, 7, 41, matahari1)
+
+        square(632, 642, 110, 7, matahari1)
+        square(639, 635, 96, 7, matahari1)
+        square(646, 628, 84, 7, matahari1)
+        square(653, 621, 68, 7, matahari1)
+        square(666, 615, 41, 6, matahari1)
+
+        square(632, 717, 110, 7, matahari1)
+        square(639, 724, 96, 7, matahari1)
+        square(646, 731, 84, 7, matahari1)
+        square(653, 738, 68, 7, matahari1)
+        square(666, 745, 41, 6, matahari1)
+
+        # Bayangan
+        square(666, 615, 41, 6, matahari2)
+        square(701, 621, 13, 7, matahari2)
+        square(653, 621, 34, 7, matahari2)
+        square(646, 628, 14, 7, matahari2)
+        square(666, 628, 20, 7, matahari2)
+        square(639, 635, 14, 7, matahari2)
+        square(660, 635, 13, 7, matahari2)
+        square(632, 642, 14, 7, matahari2)
+        square(653, 642, 7, 7, matahari2)
+        square(625, 649, 14, 7, matahari2)
+        square(646, 649, 7, 7, matahari2)
+        square(625, 656, 7, 7, matahari2)
+        square(639, 656, 7, 7, matahari2)
+        square(618, 663, 21, 41, matahari2)
+        square(625, 669, 7, 28, matahari1)
+        square(653, 663, 7, 6, matahari2)
+        square(646, 669, 7, 28, matahari2)
+        square(625, 704, 21, 13, matahari2)
+        square(632, 704, 7, 7, matahari1)
+        square(632, 717, 14, 7, matahari2)
+        square(639, 724, 7, 7, matahari2)
+        square(653, 738, 20, 7, matahari2)
+        square(666, 745, 14, 7, matahari2)
+
+        # Percikan
+        square(680, 580, 14, 28, matahari1)
+        square(687, 580, 7, 21, matahari2)
+
+        square(742, 614, 7, 7, matahari1)
+        square(749, 607, 7, 7, matahari1)
+        square(756, 600, 7, 7, matahari1)
+        square(763, 593, 7, 7, matahari1)
+        square(749, 614, 7, 7, matahari2)
+        square(756, 607, 7, 7, matahari2)
+        square(763, 600, 7, 7, matahari2)
+        square(770, 593, 7, 7, matahari2)
+
+        square(762, 676, 21, 14, matahari1)
+        square(783, 676, 7, 14, matahari2)
+        square(769, 683, 14, 7, matahari2)
+
+        square(742, 745, 7, 7, matahari1)
+        square(749, 752, 7, 7, matahari1)
+        square(756, 759, 7, 7, matahari1)
+        square(763, 766, 7, 7, matahari1)
+        square(749, 745, 7, 7, matahari2)
+        square(756, 752, 7, 7, matahari2)
+        square(763, 759, 7, 7, matahari2)
+        square(770, 766, 7, 7, matahari2)
+
+        square(680, 759, 14, 28, matahari1)
+        square(680, 766, 7, 21, matahari2)
+
+        square(598, 766, 7, 7, matahari2)
+        square(605, 759, 7, 7, matahari2)
+        square(612, 752, 7, 7, matahari2)
+        square(619, 745, 7, 7, matahari2)
+        square(604, 766, 7, 7, matahari1)
+        square(611, 759, 7, 7, matahari1)
+        square(618, 752, 7, 7, matahari1)
+        square(625, 745, 7, 7, matahari1)
+
+        square(591, 676, 21, 14, matahari1)
+        square(584, 676, 7, 14, matahari2)
+        square(591, 676, 14, 7, matahari2)
+
+        square(598, 594, 7, 7, matahari2)
+        square(605, 601, 7, 7, matahari2)
+        square(612, 608, 7, 7, matahari2)
+        square(619, 615, 7, 7, matahari2)
+        square(604, 594, 7, 7, matahari1)
+        square(611, 601, 7, 7, matahari1)
+        square(618, 608, 7, 7, matahari1)
+        square(625, 615, 7, 7, matahari1)
+
+    def overlay_putih():
+        glBegin(GL_QUADS)
+        glColor4f(1, 1, 1, 0.5)
+        glVertex2f(0, 0)
+        glVertex2f(800, 0)
+        glVertex2f(800, 800)
+        glVertex2f(0, 800)
+        glEnd()    
+
+    def langit():
+        # Langit
+        square(0, 130, 800, 670, biru_langit)
+
+        # Awan 1
+        square(0, 100, 400, 340, biru_awan1)
+
+        square(0, 440, 310, 50, biru_awan1)
+        square(0, 490, 210, 10, biru_awan1)
+        square(0, 500, 190, 10, biru_awan1)
+        square(0, 510, 160, 10, biru_awan1)
+        square(0, 520, 110, 10, biru_awan1)
+        square(0, 530, 70, 10, biru_awan1)
+
+        square(340, 440, 60, 10, biru_awan1)
+        square(350, 450, 50, 10, biru_awan1)
+        square(370, 460, 30, 10, biru_awan1)
+
+        # Awan 2
+        square(0, 100, 800, 200, biru_awan2)
+
+        square(20, 300, 780, 20, biru_awan2)
+        square(60, 320, 740, 20, biru_awan2)
+
+        square(120, 340, 680, 10, biru_awan2)
+        square(120, 350, 210, 10, biru_awan2)
+        square(120, 360, 180, 10, biru_awan2)
+        square(120, 370, 170, 10, biru_awan2)
+        square(120, 380, 165, 10, biru_awan2)
+        square(120, 390, 145, 10, biru_awan2)
+        square(160, 400, 80, 5, biru_awan2)
+        square(185, 405, 55, 5, biru_awan2)
+
+        square(340, 350, 460, 30, biru_awan2)
+        square(350, 380, 450, 30, biru_awan2)
+        square(360, 410, 440, 20, biru_awan2)
+        square(370, 430, 415,  10, biru_awan2)
+        square(375, 440, 405,  20, biru_awan2)
+        square(385, 460, 395,  5, biru_awan2)
+        square(400, 465, 295,  15, biru_awan2)
+        square(405, 480, 290,  5, biru_awan2)
+        square(415, 485, 280,  10, biru_awan2)
+        square(425, 495, 260,  10, biru_awan2)
+        square(445, 505, 190,  10, biru_awan2)
+        square(475, 515, 140,  10, biru_awan2)
+        square(495, 525, 80,  10, biru_awan2)
+
+        # Awan 3
+        square(0, 100, 800, 100, biru_awan3)
+
+        square(0, 200, 100, 30, biru_awan3)
+        square(0, 230, 70, 20, biru_awan3)
+        square(0, 250, 40, 10, biru_awan3)
+
+        square(130, 200, 670, 30, biru_awan3)
+
+        square(160, 230, 355, 10, biru_awan3)
+        square(170, 240, 345, 10, biru_awan3)
+        square(190, 250, 305, 10, biru_awan3)
+        square(220, 260, 275, 10, biru_awan3)
+        square(260, 270, 235, 10, biru_awan3)
+        square(260, 280, 180, 10, biru_awan3)
+
+        square(515, 230, 285, 10, biru_awan3)
+
+        square(555, 240, 145, 5, biru_awan3)
+        square(575, 245, 125, 10, biru_awan3)
+        square(595, 255, 75, 10, biru_awan3)
+
+        square(735, 240, 65, 30, biru_awan3)
+        square(740, 270, 60, 5, biru_awan3)
+        square(755, 275, 45, 10, biru_awan3)
+        square(765, 285, 35, 20, biru_awan3)
+        square(775, 305, 25, 15, biru_awan3)
+        square(790, 320, 10, 5, biru_awan3)
+        square(795, 325, 5, 10, biru_awan3)
+
+    def tanah_b():
+        # Tanah
+        square(0, 0, 310, 20, tanah2)
+
+        square(10, 20, 80, 10, tanah2)
+        square(20, 30, 40, 10, tanah2)
+        square(30, 40, 10, 10, tanah2)
+
+        square(100, 20, 110, 10, tanah2)
+        square(110, 30, 90, 10, tanah2)
+        square(110, 40, 80, 10, tanah2)
+        square(120, 50, 70, 10, tanah2)
+        square(120, 60, 40, 10, tanah2)
+        square(130, 70, 10, 10, tanah2)
+
+        square(220, 20, 80, 10, tanah2)
+        square(220, 30, 30, 10, tanah2)
+        square(230, 40, 10, 10, tanah2)
+        square(260, 30, 40, 10, tanah2)
+        square(270, 40, 20, 20, tanah2)
+        square(280, 60, 10, 10, tanah2)
+
+        square(320, 0, 200, 20, tanah2)
+        square(330, 20, 90, 10, tanah2)
+        square(340, 30, 10, 10, tanah2)
+        square(370, 30, 40, 10, tanah2)
+        square(380, 40, 20, 10, tanah2)
+        square(390, 50, 10, 10, tanah2)
+
+        square(440, 20, 80, 10, tanah2)
+        square(450, 30, 30, 10, tanah2)
+        square(490, 30, 10, 10, tanah2)
+        square(460, 40, 10, 10, tanah2)
+
+        square(540, 0, 20, 20, tanah2)
+        square(560, 0, 10, 20, tanah2)
+
+        square(570, 0, 230, 20, tanah2)
+
+        square(580, 20, 50, 10, tanah2)
+        square(590, 30, 30, 10, tanah2)
+        square(600, 40, 20, 10, tanah2)
+        square(610, 50, 10, 20, tanah2)
+
+        square(640, 20, 120, 10, tanah2)
+        square(650, 30, 20, 10, tanah2)
+        square(690, 30, 50, 10, tanah2)
+        square(690, 40, 40, 10, tanah2)
+        square(700, 50, 30, 10, tanah2)
+        square(700, 60, 20, 10, tanah2)
+        square(710, 70, 10, 20, tanah2)
+
+        square(760, 20, 40, 10, tanah2)
+        square(770, 30, 30, 10, tanah2)
+        square(780, 40, 10, 30, tanah2)
+
+    def tanah_u():
+        glPushMatrix()
+        glTranslatef(0.0, -10.0, 0.0)
+
+        square(0, 0, 310, 20, tanah1)
+
+        square(10, 20, 80, 10, tanah1)
+        square(20, 30, 40, 10, tanah1)
+        square(30, 40, 10, 10, tanah1)
+
+        square(100, 20, 110, 10, tanah1)
+        square(110, 30, 90, 10, tanah1)
+        square(110, 40, 80, 10, tanah1)
+        square(120, 50, 70, 10, tanah1)
+        square(120, 60, 40, 10, tanah1)
+        square(130, 70, 10, 10, tanah1)
+
+        square(220, 20, 80, 10, tanah1)
+        square(220, 30, 30, 10, tanah1)
+        square(230, 40, 10, 10, tanah1)
+        square(260, 30, 40, 10, tanah1)
+        square(270, 40, 20, 20, tanah1)
+        square(280, 60, 10, 10, tanah1)
+
+        square(320, 0, 200, 20, tanah1)
+        square(330, 20, 90, 10, tanah1)
+        square(340, 30, 10, 10, tanah1)
+        square(370, 30, 40, 10, tanah1)
+        square(380, 40, 20, 10, tanah1)
+        square(390, 50, 10, 10, tanah1)
+
+        square(440, 20, 80, 10, tanah1)
+        square(450, 30, 30, 10, tanah1)
+        square(490, 30, 10, 10, tanah1)
+        square(460, 40, 10, 10, tanah1)
+
+        square(540, 0, 20, 20, tanah1)
+        square(560, 0, 10, 20, tanah1)
+
+        square(570, 0, 230, 20, tanah1)
+
+        square(580, 20, 50, 10, tanah1)
+        square(590, 30, 30, 10, tanah1)
+        square(600, 40, 20, 10, tanah1)
+        square(610, 50, 10, 20, tanah1)
+
+        square(640, 20, 120, 10, tanah1)
+        square(650, 30, 20, 10, tanah1)
+        square(690, 30, 50, 10, tanah1)
+        square(690, 40, 40, 10, tanah1)
+        square(700, 50, 30, 10, tanah1)
+        square(700, 60, 20, 10, tanah1)
+        square(710, 70, 10, 20, tanah1)
+
+        square(760, 20, 40, 10, tanah1)
+        square(770, 30, 30, 10, tanah1)
+        square(780, 40, 10, 30, tanah1)
+
+        glPopMatrix()
+
+    def rumput():
+        square(0, 0, 800, 125, hijau)
+        square(0, 125, 800, 5, hijau_tua)
+
+        square(10, 80, 10, 20, hijau_tua)
+        square(20, 100, 10, 10, hijau_tua)
+        square(30, 90, 10, 10, hijau_tua)
+        square(40, 70, 10, 20, hijau_tua)
+
+        square(240, 120, 10, 30, hijau_tua)
+        square(250, 150, 10, 20, hijau_tua)
+        square(260, 140, 10, 10, hijau_tua)
+        square(270, 130, 20, 10, hijau_tua)
+        square(290, 140, 10, 10, hijau_tua)
+        square(300, 120, 10, 20, hijau_tua)
+        square(250, 120, 50, 10, hijau)
+        square(250, 130, 20, 10, hijau)
+        square(250, 140, 10, 10, hijau)
+        square(290, 130, 10, 10, hijau)
+
+        square(390, 80, 10, 20, hijau_tua)
+        square(400, 100, 10, 10, hijau_tua)
+        square(410, 80, 10, 20, hijau_tua)
+        square(420, 100, 10, 20, hijau_tua)
+        square(430, 100, 10, 10, hijau_tua)
+        square(440, 90, 10, 10, hijau_tua)
+
+        square(490, 120, 10, 30, hijau_tua)
+        square(500, 150, 10, 20, hijau_tua)
+        square(510, 140, 10, 10, hijau_tua)
+        square(520, 130, 20, 10, hijau_tua)
+        square(540, 140, 10, 10, hijau_tua)
+        square(550, 120, 10, 20, hijau_tua)
+        square(500, 120, 50, 10, hijau)
+        square(500, 130, 20, 10, hijau)
+        square(500, 140, 10, 10, hijau)
+        square(540, 130, 10, 10, hijau)
+
+    def rumah():
+        square(450, 130, 170, 100, rumah1)
+        square(480, 230, 120, 190, rumah1)
+        square(480, 420, 20, 20, rumah1)
+        square(540, 420, 90, 60, rumah1)
+        square(600, 230, 50, 210, rumah2)
+        square(630, 130, 120, 290, rumah1)
+        square(640, 280, 110, 20, rumah1)
+        square(630, 420, 120, 30, rumah1)
+
+        square(750, 130, 70, 290, rumah2)
+        square(640, 390, 110, 20, rumah2)
+        square(645, 270, 105, 10, rumah2)
+
+        square(455, 230, 10, 10, rumah4)
+        square(500, 230, 90, 20, rumah4)
+        square(500, 300, 90, 90, rumah4)
+        square(670, 140, 80, 130, rumah4)
+        square(670, 300, 80, 90, rumah4)
+        
+        square(510, 230, 70, 10, rumah3)
+        square(510, 310, 70, 70, rumah3)
+        square(680, 140, 70, 120, rumah3)
+        square(680, 310, 70, 70, rumah3)
+        square(445, 240, 30, 20, rumah3)
+
+        square(530, 470, 60, 20, rumah5)
+        square(570, 460, 60, 20, rumah5)
+        square(610, 450, 60, 20, rumah5)
+        square(650, 440, 60, 20, rumah5)
+        square(690, 430, 60, 20, rumah5)
+        square(730, 420, 60, 20, rumah5)
+        square(790, 420, 40, 10, rumah5)
+
+        square(500, 425, 100, 10, rumah6)
+        square(620, 130, 10, 100, rumah6)
+        square(740, 130, 10, 100, rumah6)
+        square(630, 130, 110, 10, rumah6)
+        square(630, 220, 110, 10, rumah6)
+        square(640, 140, 10, 80, rumah6)
+        square(660, 140, 10, 80, rumah6)
+        square(680, 140, 10, 80, rumah6)
+        square(700, 140, 10, 80, rumah6)
+        square(720, 140, 10, 80, rumah6)
+
+    def orang1():
+        # Sepatu
+        square(62, 128, 28, 6, hitam)
+        square(62, 134, 20, 6, hitam)
+
+        square(94, 128, 26, 6, hitam)
+        square(94, 134, 20, 6, hitam)
+
+        # Celana
+        square(62, 140, 20, 38, biru_tua)
+        square(94, 140, 20, 38, biru_tua)
+        square(62, 178, 52, 20, biru_tua)
+
+        # Baju
+        square(68, 198, 46, 58, biru2)
+        square(56, 224, 12, 20, biru2)
+        square(62, 244, 6, 6, biru2)
+        square(114, 224, 12, 13, biru2)
+
+        square(94, 212, 20, 44, biru1)
+        square(114, 237, 12, 7, biru1)
+        square(114, 244, 6, 6, biru1)
+        square(88, 218, 6, 38, biru1)
+        square(82, 230, 6, 26, biru1)
+        square(74, 230, 8, 20, biru1)
+
+        # Tangan
+        square(62, 180, 6, 44, cream1)
+        square(56, 186, 6, 38, cream1)
+
+        square(120, 212, 13, 6, cream1)
+        square(114, 218, 25, 6, cream1)
+        square(126, 224, 13, 7, cream1)
+        square(133, 231, 13, 6, cream1)
+        square(139, 237, 13, 7, cream1)
+        square(139, 244, 19, 6, cream1)
+        square(139, 250, 6, 6, cream1)
+
+        # Rambut
+        square(42, 314, 98, 46, hitam)
+        square(42, 360, 90, 12, hitam)
+        square(50, 372, 82, 12, hitam)
+        square(100, 384, 10, 6, hitam)
+        square(110, 384, 10, 16, hitam)
+        square(120, 384, 12, 26, hitam)
+
+        # Leher
+        square(81, 256, 19, 7, cream2)
+
+        # Kepala
+        square(68, 263, 46, 83, cream1)
+
+        square(62, 269, 6, 71, cream1)
+        square(56, 276, 6, 64, cream1)
+        square(49, 282, 7, 45, cream1)
+        square(42, 295, 7, 19, cream1)
+        square(36, 302, 6, 12, cream1)
+
+        square(114, 269, 6, 71, cream1)
+        square(120, 276, 6, 64, cream1)
+        square(126, 288, 7, 32, cream1)
+        square(133, 295, 6, 19, cream1)
+        square(139, 302, 7, 12, cream1)
+
+        # Bayangan
+        square(68, 263, 13, 6, cream2)
+        square(62, 269, 13, 7, cream2)
+        square(56, 276, 12, 6, cream2)
+        square(49, 282, 13, 6, cream2)
+        square(49, 288, 7, 20, cream2)
+        square(42, 295, 7, 13, cream2)
+        square(36, 302, 6, 6, cream2)
+
+        square(133, 295, 6, 7, cream2)
+        square(139, 302, 7, 6, cream2)
+
+        square(62, 334, 13, 6, cream2)
+        square(68, 340, 46, 6, cream2)
+        square(107, 334, 19, 6, cream2)
+        square(120, 328, 6, 6, cream2)
+
+        # Mata
+        square(75, 308, 6, 13, hitam)
+        square(107, 308, 6, 13, hitam)
+
+        # Mulut
+        square(81, 276, 20, 6, putih)
+        square(75, 282, 32, 13, putih)
+
+    def orang2():
+        glPushMatrix()
+        glScalef(-1.0, 1.0, 1.0)  
+        glTranslatef(-800.0, 0.0, 0.0)
+
+        # Sepatu
+        square(62, 128, 28, 6, hitam)
+        square(62, 134, 20, 6, hitam)
+
+        square(94, 128, 26, 6, hitam)
+        square(94, 134, 20, 6, hitam)
+
+        # Celana
+        square(62, 140, 20, 38, biru_tua)
+        square(94, 140, 20, 38, biru_tua)
+        square(62, 178, 52, 20, biru_tua)
+
+        # Baju
+        square(68, 198, 46, 58, kuning_tua)
+        square(56, 224, 12, 20, kuning_tua)
+        square(62, 244, 6, 6, kuning_tua)
+        square(114, 224, 12, 13, kuning_tua)
+
+        square(94, 212, 20, 44, kuning)
+        square(114, 237, 12, 7, kuning)
+        square(114, 244, 6, 6, kuning)
+        square(88, 218, 6, 38, kuning)
+        square(82, 230, 6, 26, kuning)
+        square(74, 230, 8, 20, kuning)
+
+        # Tangan
+        square(62, 180, 6, 44, coklat)
+        square(56, 186, 6, 38, coklat)
+
+        square(120, 212, 13, 6, coklat)
+        square(114, 218, 25, 6, coklat)
+        square(126, 224, 13, 7, coklat)
+        square(133, 231, 13, 6, coklat)
+        square(139, 237, 13, 7, coklat)
+        square(139, 244, 19, 6, coklat)
+        square(139, 250, 6, 6, coklat)
+
+        # Rambut
+        square(42, 314, 98, 46, hitam)
+        square(42, 360, 90, 12, hitam)
+        square(50, 372, 80, 12, hitam)
+
+        # Leher
+        square(81, 256, 19, 7, coklat_tua)
+
+        # Kepala
+        square(68, 263, 46, 83, coklat)
+
+        square(62, 269, 6, 71, coklat)
+        square(56, 276, 6, 64, coklat)
+        square(49, 282, 7, 45, coklat)
+        square(42, 295, 7, 19, coklat)
+        square(36, 302, 6, 12, coklat)
+
+        square(114, 269, 6, 71, coklat)
+        square(120, 276, 6, 64, coklat)
+        square(126, 288, 7, 32, coklat)
+        square(133, 295, 6, 19, coklat)
+        square(139, 302, 7, 12, coklat)
+
+        # Bayangan
+        square(68, 263, 13, 6, coklat_tua)
+        square(62, 269, 13, 7, coklat_tua)
+        square(56, 276, 12, 6, coklat_tua)
+        square(49, 282, 13, 6, coklat_tua)
+        square(49, 288, 7, 20, coklat_tua)
+        square(42, 295, 7, 13, coklat_tua)
+        square(36, 302, 6, 6, coklat_tua)
+
+        square(133, 295, 6, 7, coklat_tua)
+        square(139, 302, 7, 6, coklat_tua)
+
+        square(62, 334, 13, 6, coklat_tua)
+        square(68, 340, 46, 6, coklat_tua)
+        square(107, 334, 19, 6, coklat_tua)
+        square(120, 328, 6, 6, coklat_tua)
+
+        # Mata
+        square(75, 308, 6, 13, hitam)
+        square(107, 308, 6, 13, hitam)
+
+        # Mulut
+        square(81, 276, 20, 6, putih)
+        square(75, 282, 32, 13, putih)
+
+        glPopMatrix()
+
+    def cs():
+        # Coming Soon
+        glBegin(GL_QUADS)
+        glColor4f(0, 0, 0, 0.5)
+        glVertex2f(0, 0)
+        glVertex2f(800, 0)
+        glVertex2f(800, 800)
+        glVertex2f(0, 800)
+        glEnd()   
+
+        # Frame
+        square(160, 350, 480, 100, hijau_button1)
+        square(180, 350, 450, 10, hijau_button2)
+        square(620, 360, 10, 20, hijau_button2)
+        square(630, 360, 10, 60, hijau_button2)
+
+        square(170, 340, 460, 10, hitam)
+        square(170, 450, 460, 10, hitam)
+        square(160, 350, 10, 10, hitam)
+        square(160, 440, 10, 10, hitam)
+        square(630, 350, 10, 10, hitam)
+        square(630, 440, 10, 10, hitam)
+        square(150, 360, 10, 80, hitam)
+        square(640, 360, 10, 80, hitam)
+
+        # Huruf
+        square(245, 380, 30, 5, hitam)
+        square(245, 420, 30, 5, hitam)
+        square(240, 385, 5, 35, hitam)
+        square(275, 385, 5, 10, hitam)
+        square(275, 410, 5, 10, hitam)
+
+        square(285, 385, 5, 20, hitam)
+        square(305, 385, 5, 20, hitam)
+        square(290, 380, 15, 5, hitam)
+        square(290, 405, 15, 5, hitam)
+
+        square(315, 380, 5, 25, hitam)
+        square(335, 380, 5, 25, hitam)
+        square(355, 380, 5, 25, hitam)
+        square(320, 405, 15, 5, hitam)
+        square(340, 405, 15, 5, hitam)
+
+        square(365, 380, 5, 25, hitam)
+
+        square(375, 380, 5, 30, hitam)
+        square(380, 405, 10, 5, hitam)
+        square(390, 380, 5, 25, hitam)
+
+        square(400, 390, 5, 15, hitam)
+        square(415, 390, 5, 15, hitam)
+        square(415, 375, 5, 10, hitam)
+        square(405, 370, 10, 5, hitam)
+        square(405, 385, 10, 5, hitam)
+        square(405, 405, 10, 5, hitam)
+        square(400, 375, 5, 5, hitam)
+
+        square(440, 380, 25, 5, hitam)
+        square(445, 420, 25, 5, hitam)
+        square(445, 400, 20, 5, hitam)
+        square(440, 405, 5, 15, hitam)
+        square(465, 385, 5, 15, hitam)
+
+        square(475, 385, 5, 20, hitam)
+        square(495, 385, 5, 20, hitam)
+        square(480, 380, 15, 5, hitam)
+        square(480, 405, 15, 5, hitam)
+
+        square(505, 385, 5, 20, hitam)
+        square(525, 385, 5, 20, hitam)
+        square(510, 380, 15, 5, hitam)
+        square(510, 405, 15, 5, hitam)
+
+        square(535, 380, 5, 30, hitam)
+        square(540, 405, 10, 5, hitam)
+        square(550, 380, 5, 25, hitam)
+
+    langit()
+    rumah()
+    overlay_putih()
+    rumput()
+    tanah_b()
+    tanah_u()
+    orang1()
+    orang2()
+    matahari()
+    cs()
+
+
 def nyawa1():
     if nyawa1_visible:
         square(580, 715, 50, 25, merah)
@@ -6613,83 +7263,6 @@ def nyawa3():
     square(720, 735, 5, 5, hitam)
     square(765, 735, 5, 5, hitam)
 
-
-def cs():
-    # Coming Soon
-    glBegin(GL_QUADS)
-    glColor4f(0, 0, 0, 0.5)
-    glVertex2f(0, 0)
-    glVertex2f(800, 0)
-    glVertex2f(800, 800)
-    glVertex2f(0, 800)
-    glEnd()   
-
-    # Frame
-    square(160, 350, 480, 100, hijau_button1)
-    square(180, 350, 450, 10, hijau_button2)
-    square(620, 360, 10, 20, hijau_button2)
-    square(630, 360, 10, 60, hijau_button2)
-
-    square(170, 340, 460, 10, hitam)
-    square(170, 450, 460, 10, hitam)
-    square(160, 350, 10, 10, hitam)
-    square(160, 440, 10, 10, hitam)
-    square(630, 350, 10, 10, hitam)
-    square(630, 440, 10, 10, hitam)
-    square(150, 360, 10, 80, hitam)
-    square(640, 360, 10, 80, hitam)
-
-    # Huruf
-    square(245, 380, 30, 5, hitam)
-    square(245, 420, 30, 5, hitam)
-    square(240, 385, 5, 35, hitam)
-    square(275, 385, 5, 10, hitam)
-    square(275, 410, 5, 10, hitam)
-
-    square(285, 385, 5, 20, hitam)
-    square(305, 385, 5, 20, hitam)
-    square(290, 380, 15, 5, hitam)
-    square(290, 405, 15, 5, hitam)
-
-    square(315, 380, 5, 25, hitam)
-    square(335, 380, 5, 25, hitam)
-    square(355, 380, 5, 25, hitam)
-    square(320, 405, 15, 5, hitam)
-    square(340, 405, 15, 5, hitam)
-
-    square(365, 380, 5, 25, hitam)
-
-    square(375, 380, 5, 30, hitam)
-    square(380, 405, 10, 5, hitam)
-    square(390, 380, 5, 25, hitam)
-
-    square(400, 390, 5, 15, hitam)
-    square(415, 390, 5, 15, hitam)
-    square(415, 375, 5, 10, hitam)
-    square(405, 370, 10, 5, hitam)
-    square(405, 385, 10, 5, hitam)
-    square(405, 405, 10, 5, hitam)
-    square(400, 375, 5, 5, hitam)
-
-    square(440, 380, 25, 5, hitam)
-    square(445, 420, 25, 5, hitam)
-    square(445, 400, 20, 5, hitam)
-    square(440, 405, 5, 15, hitam)
-    square(465, 385, 5, 15, hitam)
-
-    square(475, 385, 5, 20, hitam)
-    square(495, 385, 5, 20, hitam)
-    square(480, 380, 15, 5, hitam)
-    square(480, 405, 15, 5, hitam)
-
-    square(505, 385, 5, 20, hitam)
-    square(525, 385, 5, 20, hitam)
-    square(510, 380, 15, 5, hitam)
-    square(510, 405, 15, 5, hitam)
-
-    square(535, 380, 5, 30, hitam)
-    square(540, 405, 10, 5, hitam)
-    square(550, 380, 5, 25, hitam)
 
 
 def notif_kalah():
@@ -7457,9 +8030,9 @@ def showScreen():
             if sisa_nyawa == 0:
                 notif_kalah()
         elif current_level == 3:
-            cs()
+            tampilan_cs()
         elif current_level == 4:
-            cs()
+            tampilan_cs()
     elif game_mode == GAME_SCREEN2:
         tampilan_in_game2()
         display()
