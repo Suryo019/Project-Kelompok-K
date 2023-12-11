@@ -32,6 +32,8 @@ pohon1 = 124, 96, 26
 pohon2 = 93, 70, 11
 level_box1 = 230, 230, 230
 biru_level_box = 76, 189, 227
+biru_ov = 0, 134, 255
+biru_ob = 1, 97, 183
 oren = 238, 186, 107
 merah = 219, 89, 87
 biru1 = 12, 80, 177
@@ -622,6 +624,83 @@ def tampilan_awal():
 
         # draw_text1("Click anywhere to start", 300, 210, hitam)
 
+    def judul():
+        # Frame
+        square(60, 620, 680, 100, biru_ov)
+        square(80, 620, 650, 10, biru_ob)
+        square(720, 630, 20, 10, biru_ob)
+        square(730, 640, 10, 60, biru_ob)
+
+        square(70, 610, 660, 10, hitam)
+        square(70, 720, 660, 10, hitam)
+        square(60, 620, 10, 10, hitam)
+        square(60, 710, 10, 10, hitam)
+        square(730, 620, 10, 10, hitam)
+        square(730, 710, 10, 10, hitam)
+        square(50, 630, 10, 80, hitam)
+        square(740, 630, 10, 80, hitam)
+
+        # Huruf
+        square(80, 640, 10, 60, hitam)
+        square(110, 650, 10, 10, hitam)
+        square(90, 640, 30, 10, hitam)
+        square(90, 690, 30, 10, hitam)
+        square(100, 660, 20, 10, hitam)
+
+        square(130, 640, 10, 60, hitam)
+        square(160, 640, 10, 60, hitam)
+        square(140, 640, 20, 10, hitam)
+
+        square(180, 640, 10, 60, hitam)
+        square(190, 640, 30, 10, hitam)
+        square(190, 690, 30, 10, hitam)
+        square(190, 665, 25, 10, hitam)
+
+        square(230, 640, 40, 10, hitam)
+        square(240, 690, 40, 10, hitam)
+        square(240, 670, 30, 10, hitam)
+        square(230, 680, 10, 10, hitam)
+        square(270, 650, 10, 20, hitam)
+
+        square(305, 640, 10, 50, hitam)
+        square(290, 690, 40, 10, hitam)
+
+
+        square(365, 640, 10, 50, hitam)
+        square(350, 690, 40, 10, hitam)
+
+        square(400, 640, 10, 60, hitam)
+        square(430, 640, 10, 60, hitam)
+        square(410, 665, 20, 10, hitam)
+
+        square(450, 640, 10, 60, hitam)
+        square(460, 640, 30, 10, hitam)
+        square(460, 690, 30, 10, hitam)
+        square(460, 665, 25, 10, hitam)
+
+
+        square(510, 640, 10, 60, hitam)
+        square(550, 640, 10, 60, hitam)
+        square(520, 680, 10, 10, hitam)
+        square(540, 650, 10, 10, hitam)
+        square(530, 660, 10, 20, hitam)
+
+        square(570, 640, 10, 50, hitam)
+        square(600, 640, 10, 50, hitam)
+        square(580, 660, 20, 10, hitam)
+        square(580, 690, 20, 10, hitam)
+
+        square(620, 640, 10, 60, hitam)
+        square(660, 640, 10, 60, hitam)
+        square(630, 680, 10, 10, hitam)
+        square(650, 680, 10, 10, hitam)
+        square(640, 660, 10, 20, hitam)
+
+        square(680, 640, 10, 60, hitam)
+        square(690, 640, 30, 10, hitam)
+        square(690, 690, 30, 10, hitam)
+        square(690, 665, 25, 10, hitam)        
+
     langit()
     rumput()
     tanah_b()
@@ -631,6 +710,7 @@ def tampilan_awal():
     orang()
     textbox()
     button_start()
+    judul()
 
 
 def tampilan_pilih_level():
@@ -6909,7 +6989,7 @@ def close_window():
 
 
 def input_mouse(button, state, x, y):
-    global game_mode, current_level, jawaban_salah, nyawa1_visible, nyawa2_visible, nyawa3_visible, sisa_nyawa, game_over
+    global game_mode, current_level, jawaban_salah, nyawa1_visible, nyawa2_visible, nyawa3_visible, sisa_nyawa, game_over, kotak_weight
 
     if button == GLUT_LEFT_BUTTON and state == GLUT_DOWN:
         if game_mode == HOME_SCREEN:
@@ -7277,7 +7357,12 @@ def input_mouse(button, state, x, y):
                 and pilihan1_button_y <= h - y <= pilihan1_button_y + pilihan1_button_h
             ):
                 game_mode = HOME_SCREEN
-                print("Jawabanmu benar")
+                if game_mode == HOME_SCREEN:
+                    kotak_weight = 1/1000
+                    nyawa1_visible = True
+                    nyawa2_visible = True
+                    nyawa3_visible = True
+                    print("Jawabanmu benar")
 
 
             pilihan2_button_x = 440
