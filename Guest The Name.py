@@ -7264,7 +7264,6 @@ def nyawa3():
     square(765, 735, 5, 5, hitam)
 
 
-
 def notif_kalah():
         # Overlay hitam
         glBegin(GL_QUADS)
