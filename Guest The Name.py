@@ -2055,7 +2055,7 @@ def tampilan_in_game():
         square(320, 560, 10, 80, hitam)
         square(470, 560, 10, 80, hitam)
 
-        draw_image(load_texture('C:\\Penyimpanan Utama\\Download\\Tugas\\Grafkom\\Project Kelompok K\\asset pixel\\Level 1\\bendera.png'), 320, 520, 160, 160)
+        draw_image(load_texture('asset pixel\\Level 1\\bendera.png'), 320, 520, 160, 160)
 
     
     langit()
@@ -2690,7 +2690,7 @@ def tampilan_in_game2():
         square(320, 560, 10, 80, hitam)
         square(470, 560, 10, 80, hitam)
 
-        draw_image(load_texture('C:\\Penyimpanan Utama\\Download\\Tugas\\Grafkom\\Project Kelompok K\\asset pixel\\Level 1\\kasur.png'), 340, 540, 120, 120)
+        draw_image(load_texture('asset pixel\\Level 1\\kasur.png'), 340, 540, 120, 120)
 
  
     langit()
@@ -3325,7 +3325,7 @@ def tampilan_in_game3():
         square(320, 560, 10, 80, hitam)
         square(470, 560, 10, 80, hitam)
 
-        draw_image(load_texture('C:\\Penyimpanan Utama\\Download\\Tugas\\Grafkom\\Project Kelompok K\\asset pixel\\Level 1\\kursi.png'), 345, 540, 120, 120)
+        draw_image(load_texture('asset pixel\\Level 1\\kursi.png'), 345, 540, 120, 120)
 
     
     langit()
@@ -3960,7 +3960,7 @@ def tampilan_in_game4():
         square(320, 560, 10, 80, hitam)
         square(470, 560, 10, 80, hitam)
 
-        draw_image(load_texture('C:\\Penyimpanan Utama\\Download\\Tugas\\Grafkom\\Project Kelompok K\\asset pixel\\Level 1\\meja.png'), 330, 530, 140, 140)
+        draw_image(load_texture('asset pixel\\Level 1\\meja.png'), 330, 530, 140, 140)
 
     
     langit()
@@ -4595,7 +4595,7 @@ def tampilan_in_game5():
         square(320, 560, 10, 80, hitam)
         square(470, 560, 10, 80, hitam)
 
-        draw_image(load_texture('C:\\Penyimpanan Utama\\Download\\Tugas\\Grafkom\\Project Kelompok K\\asset pixel\\Level 2\\pohon.png'), 320, 520, 160, 160)
+        draw_image(load_texture('asset pixel\\Level 2\\pohon.png'), 320, 520, 160, 160)
 
     
     langit()
@@ -5230,7 +5230,7 @@ def tampilan_in_game6():
         square(320, 560, 10, 80, hitam)
         square(470, 560, 10, 80, hitam)
 
-        draw_image(load_texture('C:\\Penyimpanan Utama\\Download\\Tugas\\Grafkom\\Project Kelompok K\\asset pixel\\Level 2\\bus.png'), 345, 540, 120, 120)
+        draw_image(load_texture('asset pixel\\Level 2\\bus.png'), 345, 540, 120, 120)
 
     
     langit()
@@ -5865,7 +5865,7 @@ def tampilan_in_game7():
         square(320, 560, 10, 80, hitam)
         square(470, 560, 10, 80, hitam)
 
-        draw_image(load_texture('C:\\Penyimpanan Utama\\Download\\Tugas\\Grafkom\\Project Kelompok K\\asset pixel\\Level 2\\sandal.png'), 320, 520, 160, 160)
+        draw_image(load_texture('asset pixel\\Level 2\\sandal.png'), 320, 520, 160, 160)
 
     
     langit()
@@ -6500,7 +6500,7 @@ def tampilan_in_game8():
         square(320, 560, 10, 80, hitam)
         square(470, 560, 10, 80, hitam)
 
-        draw_image(load_texture('C:\\Penyimpanan Utama\\Download\\Tugas\\Grafkom\\Project Kelompok K\\asset pixel\\Level 2\\sepeda.png'), 320, 520, 160, 160)
+        draw_image(load_texture('asset pixel\\Level 2\\sepeda.png'), 320, 520, 160, 160)
 
     
     langit()
@@ -7774,6 +7774,11 @@ def input_mouse(button, state, x, y):
                 and pilihan1_button_y <= h - y <= pilihan1_button_y + pilihan1_button_h
             ):
                 game_mode = HOME_SCREEN
+                kotak_weight = 1/1000
+                sisa_nyawa = 3
+                nyawa1_visible = True
+                nyawa2_visible = True
+                nyawa3_visible = True
                 print("Jawabanmu benar")
 
 
@@ -7930,6 +7935,7 @@ def input_mouse(button, state, x, y):
             ):
                 game_mode = HOME_SCREEN
                 if game_mode == HOME_SCREEN:
+                    sisa_nyawa = 3
                     kotak_weight = 1/1000
                     nyawa1_visible = True
                     nyawa2_visible = True
